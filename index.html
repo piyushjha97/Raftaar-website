@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>raftaar</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- for icons -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+
+    <link rel ="stylesheet" href = "css_files/style.css">
+    
+   
+    
+</head>
+<body>
+
+       
+
+
+
+
+    <header>
+        <nav id="navbar" class = "content"> 
+    
+            <div class="logo">
+                <img href = "#" src = "images/logo78.png" alt="logo"  >
+                
+            </div>
+            
+            <div class="menu-bar">
+                    <ul>
+                        <li><a href = "#">Home</a></li>
+                        <li><a href = "#">Gallary</a></li>
+                        <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Departments<b class = "caret"></b></a>
+                            <div class ="dropdown-menu">
+                                <ul>
+                                    <li><a href="#">Design</a></li>
+                                    <li><a href="#">Aerodynamics</a></li>
+                                    <li><a href="#">Electronics</a></li>
+                                    <li><a href="#">Riding</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li><a href = "#">News</a></li>
+                        <li><a href = "#">Contact Us</a></li>
+                        
+                </ul>
+            </div>                                     
+        </nav> 
+
+
+<!-- <script>
+        //when the page is scrolled this fuction is called
+        window.onscroll = function() {myfunction()};
+       
+        //getting navbar
+       var navbar = document.getElementById("navbar");
+       
+       //getting the offset position of navbar
+       var sticky = navbar.offsetTop;
+       
+       
+       //defining the function
+       function myfunction ()
+       {
+           if(window.pageYOffset >=sticky)
+           {
+               navbar.classList.add("sticky")
+           }
+           else
+           {
+               navbar.classList.remove("sticky")
+       
+           }
+       }
+</script> -->
+
+
+<!-- //**************timer**************// -->
+<div id="timer">
+
+        <h1>Website starts in</h1>
+        <div id="clockdiv">
+          <div>
+            <span class="days"></span>
+            <div class="smalltext">Days</div>
+          </div>
+          <div>
+            <span class="hours"></span>
+            <div class="smalltext">Hours</div>
+          </div>
+          <div>
+            <span class="minutes"></span>
+            <div class="smalltext">Minutes</div>
+          </div>
+          <div>
+            <span class="seconds"></span>
+            <div class="smalltext">Seconds</div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+<!-- ||||******************script code for timer******************||| -->
+
+
+
+
+    <script>
+    function getTimeRemaining(endtime) {
+    var t = Date.parse(endtime) - Date.parse(new Date());
+    var seconds = Math.floor((t / 1000) % 60);
+    var minutes = Math.floor((t / 1000 / 60) % 60);
+    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    return {
+      'total': t,
+      'days': days,
+      'hours': hours,
+      'minutes': minutes,
+      'seconds': seconds
+    };
+  }
+  
+  function getTimeRemaining(endtime) 
+  {
+    var t = Date.parse(endtime) - Date.parse(new Date());
+    var seconds = Math.floor((t / 1000) % 60);
+    var minutes = Math.floor((t / 1000 / 60) % 60);
+    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    return {
+      'total': t,
+      'days': days,
+      'hours': hours,
+      'minutes': minutes,
+      'seconds': seconds
+    };
+  }
+  
+  function initializeClock(id, endtime) 
+  {
+    var clock = document.getElementById('timer');
+    var daysSpan = clock.querySelector('.days');
+    var hoursSpan = clock.querySelector('.hours');
+    var minutesSpan = clock.querySelector('.minutes');
+    var secondsSpan = clock.querySelector('.seconds');
+  
+    function updateClock() {
+      var t = getTimeRemaining(endtime);
+  
+      daysSpan.innerHTML = t.days;
+      hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+      minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+      secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+  
+      if (t.total <= 0) {
+        clearInterval(timeinterval);
+      }
+    }
+  
+    updateClock();
+    var timeinterval = setInterval(updateClock, 1000);
+  }
+  
+  var deadline = new Date(Date.parse(new Date()) + 11 * 24 * 60 * 60 * 1000);
+  initializeClock('clockdiv', deadline);
+    </script>
+
+
+<!-- ||||******************script code for timer******************||| -->
+
+
+
+   <!-- //**************timer**************// -->   
+   
+   
+
+
+        
+   
+                <div class = "header1">
+                <h1>RAFTAAR</h1>
+                <p>Human Powered Vehicle team of DTU</p>
+                <a href = "#" class ="button">Let's Explore </a>
+                </div>
+     </header>
+
+
+    <section id = "introduction">
+
+        <section class="tech_team">
+
+     
+            <div class="team">
+
+                    <h1>About Raftaar</h1>
+                    <p> Team Raftaar designs innovative human powered vehicles. The team</br> aims to demonstrate the application of 
+                        engineering design principles</br>in the development of sustainable and practical transportation alternatives.Team Raftaar designs innovativeit is an awesome team</br>
+                        Team Raftaar designs innovative human powered vehicles. The team</br> aims to demonstrate the application of 
+                        engineering design principles</br>in the development of sustainable and practical .
+                        Team Raftaar is good </br> designs innovative human powered vehicles. The team aims demonstrate the application of 
+                        engineering design principles id ssd iuyi</br>in the development of sustainable and practical transportation alternatives.</br>
+                        Team Raftaar designs innovative human powered vehicles.</p>
+            </div>
+
+            <div class="picture">
+                    <img alt="team picture" src ="images/background.jpg"/>
+            </div>
+
+        </section>
+
+        <section class="competition">
+         
+                    <div class = "compt" >
+                        <h1>About Hpvc</h1>
+                        <p>Human-powered transport is often the only type available in underdeveloped or asdfasad</br>parts of the world, and if well designed,
+                        can be an increasingly viable form of sustainable</br>transportation.ASME's international Human Powered Vehicle Challenge (HPVC) provides</br>
+                        opportunity for students to demonstrate the application of sound engineering design</br>
+                        in the development of sustainable and practical transportation alternatives.In the HPVC</br>
+                        work in teams to design and build efficient, highly engineered vehicles for everyday use</br> 
+                        commuting to work, to carrying goods to market.</p>
+    
+                    </div> 
+                    <!-- <div class="picture2">
+                        <img alt = "hpvc" src = "images/background.jpg"/>
+                    </div> -->
+                    <div class="picture">
+                            <img alt="team picture" src ="images/background.jpg"/>
+                    </div>
+              
+                </section>  
+
+
+
+        
+            
+            
+            
+            
+            
+         
+    </section>
+
+
+    <footer id = "social">
+
+        <div class = "icons">
+                
+                <i style="font-size:40px" class="fa"><a href = "#">&#xf09a;</a></i>
+                <i style="font-size:40px" class="fa"><a href = "#">&#xf099;</a></i>
+                <i style="font-size:40px" class="fa"><a href = "#">&#xf16d;</a></i>
+        </div>
+
+
+        <div class="developer">
+            <a  href = "#">Know developer</a>
+            </div>
+
+    </footer>
+            
+    
+</body>
+
+<link src = "js_files/script.js"/>
+
+</html>
