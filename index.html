@@ -3,22 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> for making responsive -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>raftaar</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- for icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- for social media icons -->
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>   
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+
+     
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
-
-    <link rel ="stylesheet" href = "css_files/style.css">
+    <link rel ="stylesheet" href = "css_files/style.css">     <!-- main css file -->
+    <link rel="stylesheet" href ="css_files/timerstyle.css">  <!-- timer css file-->
+    <link rel='stylesheet' href=' css_files/demo.css'  >    <!-- lightbox gallary-->
     
    
     
@@ -31,7 +39,7 @@
 
 
     <header>
-        <nav id="navbar" class = "content"> 
+        <nav id="navbar"> 
     
             <div class="logo">
                 <img href = "#" src = "images/logo78.png" alt="logo"  >
@@ -39,6 +47,8 @@
             </div>
             
             <div class="menu-bar">
+
+                     
                     <ul>
                         <li><a href = "#">Home</a></li>
                         <li><a href = "#">Gallary</a></li>
@@ -90,12 +100,19 @@
 
 
 <!-- //**************timer**************// -->
-<div id="timer">
 
-        <h1>Website starts in</h1>
+
+
+<div id="timer">
+        
+    <div class="head">
+
+          <h1>Website starts in</h1>
+    </div>
+
         <div id="clockdiv">
           <div>
-            <span class="days"></span>
+             <span class="days"></span>
             <div class="smalltext">Days</div>
           </div>
           <div>
@@ -112,11 +129,6 @@
           </div>
         </div>
     </div>
-
-
-
-
-
 
 
 
@@ -187,16 +199,11 @@
     </script>
 
 
-<!-- ||||******************script code for timer******************||| -->
 
 
+<!-- ||||******************script code for timer finfised******************||| -->
 
-   <!-- //**************timer**************// -->   
-   
-   
-
-
-        
+  
    
                 <div class = "header1">
                 <h1>RAFTAAR</h1>
@@ -261,11 +268,118 @@
          
     </section>
 
+<!-- ||*****************IMAGE_GALARY******************|| -->
+
+    <section >
+
+            <div class="container">
+                
+                     
+
+                    <div class="gallery">
+
+                        <a href="images/image1.jpg" class="big"><img src="images/thumbs/thumb1.jpg" alt="" title="Beautiful Image" /></a>
+                        <a href="images/image2.jpg"><img src="images/thumbs/thumb2.jpg" alt="" title=""/></a>
+                        <a href="images/image3.jpg"><img src="images/thumbs/thumb3.jpg" alt="" title="Beautiful Image"/></a>
+                        <a href="images/image4.jpg"><img src="images/thumbs/thumb4.jpg" alt="" title=""/></a>
+                        <div class="clear">
+
+                        </div>
+            
+                        <a href="images/image5.jpg"><img src="images/thumbs/thumb5.jpg" alt="" title=""/></a>
+                        <a href="images/image6.jpg"><img src="images/thumbs/thumb6.jpg" alt="" title=""/></a>
+                        <a href="images/image7.jpg" class="big"><img src="images/thumbs/thumb7.jpg" alt="" title=""/></a>
+                        <a href="images/image8.jpg"><img src="images/thumbs/thumb8.jpg" alt="" title=""/></a>
+                        <div class="clear">
+
+                        </div>
+            
+                        <a href="images/image9.jpg" class="big"><img src="images/thumbs/thumb9.jpg" alt="" title=""/></a>
+                        <a href="images/image10.jpg"><img src="images/thumbs/thumb10.jpg" alt="" title=""/></a>
+                        <a href="images/image11.jpg"><img src="images/thumbs/thumb11.jpg" alt="" title=""/></a>
+                        <a href="images/image12.jpg"><img src="images/thumbs/thumb12.jpg" alt="" title=""/></a>
+                        <div class="clear">
+
+                        </div>
+            
+                    </div>
+                </div>
+
+        </section>
+
+
+    <script> 
+            $(function()
+            {
+                var $gallery = $('.gallery a').simpleLightbox();
+
+                $gallery.on('show.simplelightbox', function()
+                {
+                    console.log('Requested for showing');
+                })
+                .on('shown.simplelightbox', function()
+                {
+                    console.log('Shown');
+                })
+                .on('close.simplelightbox', function()
+                {
+                    console.log('Requested for closing');
+                })
+                .on('closed.simplelightbox', function()
+                {
+                    console.log('Closed');
+                })
+                .on('change.simplelightbox', function()
+                {
+                    console.log('Requested for change');
+                })
+                .on('next.simplelightbox', function()
+                {
+                    console.log('Requested for next');
+                })
+                .on('prev.simplelightbox', function()
+                {
+                    console.log('Requested for prev');
+                })
+                .on('nextImageLoaded.simplelightbox', function()
+                {
+                    console.log('Next image loaded');
+                })
+                .on('prevImageLoaded.simplelightbox', function()
+                {
+                    console.log('Prev image loaded');
+                })
+                .on('changed.simplelightbox', function()
+                {
+                    console.log('Image changed');
+                })
+                .on('nextDone.simplelightbox', function()
+                {
+                    console.log('Image changed to next');
+                })
+                .on('prevDone.simplelightbox', function()
+                {
+                    console.log('Image changed to prev');
+                })
+                .on('error.simplelightbox', function(e)
+                {
+                    console.log('No image found, go to the next/prev');
+                    console.log(e);
+                });
+            });
+     </script>
+
+
+<!-- // ||*****************IMAGE_GALARY******************||  -->
+
+
+
+
+
 
     <footer id = "social">
 
         <div class = "icons">
-                
                 <i style="font-size:40px" class="fa"><a href = "#">&#xf09a;</a></i>
                 <i style="font-size:40px" class="fa"><a href = "#">&#xf099;</a></i>
                 <i style="font-size:40px" class="fa"><a href = "#">&#xf16d;</a></i>
@@ -279,8 +393,14 @@
     </footer>
             
     
-</body>
 
-<link src = "js_files/script.js"/>
+ 
+
+  
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>                             <!-- ||****Lightboxgalary****|| -->
+<script type="text/javascript" src="js_files/simple-lightbox.js"></script>                  <!-- ||****Lightboxgalary****|| -->
+
+</body>
 
 </html>

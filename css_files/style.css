@@ -9,46 +9,15 @@
 /* *******************NAV BAR SECTION************************** */
 
 #navbar {  
-    background-color: transparent; 
-    padding:25px 50px 40px 50px; 
-    display: flex;
-    justify-content: space-between;
-    /* margin-bottom: 10px; */
-     /* background-color: navyblue; */
-     color: white; 
-     text-transform: uppercase;
-
-  }    
-
-.content {
-   
+     
     padding:25px 50px 25px 50px; 
     display: flex;
     justify-content: space-between;
-   
+    /* margin-bottom: 10px; */
+     background-color: rgb(23, 31, 34);
+     text-transform: uppercase;
+  }    
 
-}
-
-.sticky {
-    position:fixed;
-    top:0;
-    width:100%;
-    background: color #333;
-    color:whitesmoke;
-}
-
-  
-
-
-/* .affix {
-    top:0;
-    width:100%;
-    z-index: 9999;
-    align-content: left;
-    background-color: white;
-} */
-
- 
   .logo img {
       align-items: left;
       width: 80px;
@@ -67,8 +36,7 @@
  .menu-bar ul li a {
     text-decoration: none;
     color: white;
-    padding :15px;
-    color:black;  
+    padding :15px; 
     font-size: 15px;  
 
  }
@@ -95,57 +63,7 @@
 
     background-color:#e5e4e2;
     transition-delay: -1s;
-    
-    
-
-}
-
-/* ********************TIMER SECTION************** */
-
-#timer{
-  text-align: center;
-  background:transparent;      /* #00ECB9; */
-  font-family: 'Roboto'-serif;
-  font-weight: 900;
-  padding-bottom: 30px;
-}
-
-h1{
-  color: black;
-  font-weight: 900;
-  font-size: 20px;
-  margin-top:10px;
-}
-
-#clockdiv{
-	font-family: 'Roboto';
-	color: black;
-	display: inline-block;
-	font-weight: 900;
-	text-align: center;
-	font-size: 30px;
-}
-
-#clockdiv > div{
-	padding: 10px;
-	border-radius: 3px;
-	background: transparent;     /* #00BF96; */                 
-    display: inline-block;
-  
-}
-
-#clockdiv div > span{
-	padding: 10px;
-	border-radius: 3px;
-	background: #00816A;
-	display: inline-block;
-}
-
-.smalltext{
-	padding-top: 5px;
-	font-size: 16px;
-}
-
+ }   
  /* ********************HEADER SECTION************** */
 
 
@@ -153,9 +71,9 @@ h1{
      text-align: center;
      background-color: orange;
      padding-bottom: 100px;
-     background-image: url('../images/car_web.jpg');
+     /* background-image: url('../images/background1.jpeg'); */
      background-color: #C0C0C0;
-     height: 100vh;
+     height: 80vh;
      background-size: cover;
      
 
@@ -166,7 +84,7 @@ h1{
      font-family: 'Roboto',sans-serif;
      font-weight: 700;
      margin-bottom: 20px;
-     color:rgba(255, 255, 255, 0.705);
+     color:rgba(33, 112, 165, 0.705);
      text-align: center;
      padding-top: 0px;
  }
@@ -175,7 +93,7 @@ h1{
      color:white;
      margin-bottom: 20px;
      text-align: center;
-     padding-top: 0;
+     padding-bottom:20px;
 
  }
  header .button {
@@ -314,17 +232,20 @@ h1{
     padding-bottom: 30px;
 }
 .icons i {
-    /* width:20px; */
+    
     padding-right: 20px;
     padding-left:20px;
     font-size: 20px;
     padding-top:20px;
     margin-top: 40px;
+    
+    
   }
-  .icons a {
+  .fa a {
       color: white;
       text-decoration:none;
   }
+
   .developer {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -334,3 +255,26 @@ h1{
       color:white;
     
   }
+
+   .icons > i a:hover {
+    color:#3b5998;
+    
+   }
+   .icons > i:nth-child(2) a:hover {
+       color:#38A1F3;
+   }
+
+   .icons > i:nth-child(3) a:hover {
+    color:#8a3ab9;
+}
+
+
+  /* .icons i a:hover {
+      color:#3b5998;
+} 
+   .icons i a:hover {
+      color:#38A1F3;
+  }
+  .icons i a:hover {
+      color:#8a3ab9;
+  }  */
