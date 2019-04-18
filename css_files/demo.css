@@ -1,9 +1,9 @@
-/* line 1, ../sass/demo.scss */
-html, body {
+ 
+.container {
   font-family: 'Slabo 27px', serif;
   padding: 0;
   margin: 0;
-  background: #ffffff;
+  background: #b0b5ba;
 }
 
 /* line 8, ../sass/demo.scss */
@@ -25,12 +25,13 @@ a {
 
 /* line 22, ../sass/demo.scss */
 .container {
-  max-width: 1170px;
+  /* max-width: 1170px; */
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: 0;
+  margin-left: 0;
+  padding-bottom: 10px;
 }
 /* line 32, ../sass/demo.scss */
 .container .gallery a img {
