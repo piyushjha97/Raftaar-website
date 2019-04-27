@@ -3,6 +3,7 @@
 
 /* *******************NAV BAR SECTION************************** */
 
+ 
 .nav-bar {  
      
     padding:15px 30px 10px 30px; 
@@ -30,12 +31,7 @@
      
       
  }
- .sticky .logo img {
-    align-items: left;
-    /* width: 60px; */
-   
-    
-}
+ 
  
  .menu-bar ul li {
      display: inline-block;  
@@ -58,7 +54,7 @@
         background: none;
      }
 
- .dropdown-menu ul li  a {
+ /* .dropdown-menu ul li  a {
          color:white;
          font-weight: 400;
          padding:5px;
@@ -75,7 +71,7 @@
 
     background-color:#e5e4e2;
     transition-delay: -1s;
- }   
+ }    */
 
 
  /* ********************HEADER SECTION************** */
@@ -146,95 +142,94 @@
 
   #introduction {
     background-color:rgba(241, 232, 232, 0.116);
-    color:#f5f2f7;
-    font-weight: 400;
-    color:black;
+    color:#908796;
+     
   }
 
-    .tech_team {
-      
-      display: flex;
-      justify-content:space-between;
-      text-align: justify;
+       
+    .team {
+        display: flex;
+        justify-content:space-between;
+        text-align: justify;
+        
+
+    }
+.team-1 {
+    padding-left:30px;
+}
+.team-2 {
+   padding-left:50px;
+}
+
+    
+
+    .team-1 h2 {
+        text-transform: uppercase;
+         margin:0;
+         color:black;
+         padding:10px 30px 10px 30px;
+    }
+
+    .team-1 p {
+        color:black;
+        padding:0px 30px 0px 30px;
+        font-size: 12px;
+        
+    }
+
+    .team-2 img {
+        padding: 10px;
+        border-radius: 5%;
+        width:60%;
     }
    
+/* ||||||||||******second team**********||||||| */
 
-  .team {   
-   width:650px;   
-   padding-top: 40px;
-   padding-bottom: 100px;
-   margin-left:20px;
-   padding-left:4px; 
+
+.team-12 {
+    padding-right: 10px;
+} 
+
+.team-12  p {
+    color:black;
+    padding:0px 30px 0px 30px;
+    font-size: 12px;
+    /* text-align: left; */
 }
 
-  
-   
-  .picture img {
-      width: 60%;
-      float:right;
-      margin-top:70px;
-      padding-right: 50px;
-      padding-top:30px;
-       
-  }
-
-  .team h1 {
-      
-      font-size:30px;
-      margin-bottom: 30px; 
-      padding-left:10px;
-  }
-  .team p {
-      padding-left:10px;
-      
-  }
-   
-
-/*-------------------------second introduction section------------------------*/
 
 
 
-.competition {
-    display: flex;
-    justify-content:space-between;
-    text-align: justify;
-     
-
-}
-
-  .compt {
-    
-    width:650px;   
-    padding-top: 40px;
-    padding-bottom: 100px;
-    margin-left:20px;   
-    padding-left:4px;
-    
-  }
-
-  .picture2 {
-    width: 40%;
-    float:right;
-    margin-top:70px;
-    margin-right:20px;
-    padding-right: 50px;
-    padding-top:30px;
-    padding-left:20px;
-    
- }
-  .compt  h1 {
-    font-size:30px;
-    margin-bottom: 30px; 
-    padding-left:10px;
+.team-12 h2 {
+    text-transform: uppercase;
+     margin:0;
+     color:black;
+    padding:10px 30px 10px 30px;
      
 }
 
-.compt p {
-    /* line-height: 20px; */
-    padding-left:10px;
-    text-align: justify;
 
+.team-21 {
+    padding-right:20px;
+    padding-left: 30px;
 }
+
+ 
+
+.team-21 img {
+    padding: 10px 10px 30px 30px;
+    border-radius: 5%;
+    width:80%;
+}
+
+ 
+
+
+
+ 
+
+
+/* ||||||||||||*********department section**********||||||||| */
  
     .departments {
          
@@ -255,12 +250,16 @@
 
     }
 
-    .new p h2 h5 {
+    .new p h2 {
         text-align: justify;
         padding-right: 20px;
         padding-left:20px;
     }
-    .col p {
+    .d h2 {
+        text-transform: uppercase;
+        font-size: 19px;
+    }
+    .d p {
               text-align: justify;
               font-size:12px;
     }
